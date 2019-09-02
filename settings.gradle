@@ -4,8 +4,6 @@
 
 rootProject.name = 'Utilities'
 
-include 'gradle'
-
 include 'core'
 include 'core-ducktape'
 include 'core-ducktape:loaders-groovy'
@@ -16,4 +14,4 @@ include 'sponge'
 
 //include 'bungee'
 
-//include 'spigot'
+include 'spigot'
