@@ -1,4 +1,4 @@
-# Utilities [![Github Actions](https://github.com/Year4000/Utilities/workflows/Build/badge.svg)](https://github.com/Year4000/Utilities)
+# Utilities [![Github Actions](https://github.com/ewized/y4k-utilities/workflows/Build/badge.svg)](https://github.com/ewized/y4k-utilities)
 
 - [Year4000][year4000]
 - [Docs](https://ewized.github.io/y4k-utilities/)
