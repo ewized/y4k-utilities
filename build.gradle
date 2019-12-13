@@ -21,3 +21,21 @@ apply plugin: 'nebula-aggregate-javadocs'
 ext.utilities = project
 
 defaultTasks 'clean', 'build', 'aggregateJavadocs'
+
+// Build the Docker image dont use docker-compose
+task buildDocker(type: Exec) {
+  standardInput System.in
+  commandLine 'docker', 'build', '--rm', '-f', 'Dockerfile', '-t', 'year4000/utilities:spongevanilla', '.'
+}
+
+// Run the docker insance
+task runDocker(type: Exec) {
+  standardInput System.in
+  commandLine  'docker-compose', 'run', '-p', '25565:25565', '--rm', 'utilities'
+}
+
+// Combine building and running
+task buildRunDocker {
+  dependsOn 'buildDocker'
+  dependsOn 'runDocker'
+}

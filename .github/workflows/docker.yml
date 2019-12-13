@@ -1,0 +1,37 @@
+name: Docker
+
+# Only deploy changes to selected branch(es)
+on:
+  push:
+    branches:
+    - 'master'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: Set up JDK 1.8
+      uses: actions/setup-java@v1
+      with:
+        java-version: 1.8
+    - name: Test Utilities
+      run: ./gradlew test
+  build:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: Set up JDK 1.8
+      uses: actions/setup-java@v1
+      with:
+        java-version: 1.8
+    - name: Build Docker
+      run: ./gradlew buildDocker
+    - name: Publish to Registry
+      uses: elgohr/Publish-Docker-Github-Action@master
+      with:
+        name: ewized/y4k-utilities/utilities:spongevanilla
+        username: ewized
+        password: ${{ secrets.GITHUB_TOKEN }}
+        registry: docker.pkg.github.com

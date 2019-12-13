@@ -4,8 +4,8 @@
 version: '2'
 
 services:
-  spongevanilla:
-    build: sponge
+  utilities:
+    build: ./
     image: year4000/utilities:spongevanilla
     ports:
       - "25565:25565"

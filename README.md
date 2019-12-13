@@ -1,7 +1,9 @@
-# Utilities [![Build Status](https://circleci.com/gh/Year4000/Utilities/tree/master.svg?style=svg)](https://circleci.com/gh/Year4000/Utilities/tree/master) [![JitPack](https://jitpack.io/v/net.year4000/utilities.svg)](https://jitpack.io/#net.year4000/utilities) [![Github Actions](https://github.com/Year4000/Utilities/workflows/Java%20CI/badge.svg)](https://github.com/Year4000/Utilities)
+# Utilities [![Github Actions](https://github.com/Year4000/Utilities/workflows/Build/badge.svg)](https://github.com/Year4000/Utilities)
 
-- [Discord](https://discord.gg/ySj69qR): #year4000 on Discord
-- [SpongeVanilla Dockerfile](https://github.com/Year4000/Utilities/blob/master/sponge/Dockerfile): year4000/utilities:spongevanilla
+- [Year4000][year4000]
+- [Docs](https://ewized.github.io/y4k-utilities/)
+- [Discord](https://discord.gg/ySj69qR): #year4000
+- [Dockerfile](https://github.com/Year4000/Utilities/blob/master/Dockerfile): year4000/utilities:spongevanilla
 
 The original [Utilities] created by ewized is ported over for [Year4000].
 This project is a modify version used for projects made for Year4000.
@@ -54,7 +56,7 @@ We use JitPack for the Maven repository hosting.
 
 ## License
 
-Copyright &copy; 2017 Year4000 [www.year4000.net][year4000]. All Rights Reserved.
+Copyright &copy; 2019 Year4000 [www.year4000.net][year4000]. All Rights Reserved.
 
 The source code is provided for reference only.
 You may not redistribute modified versions of the source code.

@@ -13,6 +13,11 @@ run/
 .idea/
 *.iml
 out/
+.vscode/
+.project
+.settings/
+.classpath
+bin/
 
 # Mac
 ._*
