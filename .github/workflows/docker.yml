@@ -29,7 +29,7 @@ jobs:
     - name: Build Docker
       run: ./gradlew buildDocker
     - name: Publish to Registry
-      uses: elgohr/Publish-Docker-Github-Action@master
+      uses: elgohr/Publish-Docker-Github-Action@v5
       with:
         name: ewized/y4k-utilities/utilities:spongevanilla
         username: ewized
